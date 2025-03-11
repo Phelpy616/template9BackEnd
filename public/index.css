@@ -1,0 +1,625 @@
+* {
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  background-color: #ecedf2;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.header2 {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+.header h1,
+.header h2 {
+  margin: 0;
+}
+
+.header .navigation {
+  display: flex;
+  gap: 30px;
+}
+
+.header .notLogged {
+  display: flex;
+  align-items: center;
+}
+
+.header .notLogged img {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+.header .notLogged.hidden {
+  display: none;
+}
+
+.header .logged {
+  display: flex;
+  align-items: center;
+}
+
+.header .logged h2 {
+  cursor: pointer;
+}
+
+.header .logged img {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+.header .logged.hidden {
+  display: none;
+}
+
+/*Slider at the top*/
+.topSlider {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+
+.topSlider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.topSlider img.active {
+  opacity: 1;
+}
+
+.topSlider .topSliderOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.348);
+  z-index: 10;
+}
+
+/*Search*/
+.search {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search .searchBlock {
+  width: 70%;
+  height: 200px;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search .searchBlock .searchBlockHeader {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search .searchBlock .searchField {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search .searchBlock .searchField div:nth-child(1) {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search .searchBlock .searchField div:nth-child(1) img {
+  width: 30px;
+  height: 30px;
+}
+
+.search .searchBlock .searchField div:nth-child(1) input {
+  width: 80%;
+  height: 40px;
+}
+
+.search .searchBlock .searchField div:nth-child(1) .searchBtn {
+  width: 97px;
+  height: 47px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.search .searchBlock .searchField div:nth-child(2) {
+  width: 30%;
+  height: 47px;
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+/*Makes*/
+.makes {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.makes .logosWrapper {
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.makes .logosWrapper div {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.makes .logosWrapper div img {
+  width: 50%;
+  height: auto;
+}
+
+.makes .logosWrapper div:nth-child(3) img {
+  width: 65px;
+}
+
+.makes .logosWrapper div:nth-child(4) img {
+  width: 85px;
+}
+
+.makes .logosWrapper div:nth-child(5) img {
+  width: 100px;
+}
+
+.makes .logosWrapper div:nth-child(6) img {
+  width: 65px;
+}
+
+/*Recommended cars */
+.recommended {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recommended .recommendedWrapper {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommended .recommendedWrapper .carPreview {
+  width: 19%;
+  height: 400px;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.recommended .recommendedWrapper .carPreview .name {
+  font-weight: 600;
+}
+
+.recommended .recommendedWrapper .carPreview p {
+  margin: 0 15px 10px 15px;
+}
+
+.recommended .recommendedWrapper .carPreview h2 {
+  margin: 20px 0 20px 20px;
+}
+
+.recommended .recommendedWrapper .carPreview div:nth-child(1) {
+  width: 100%;
+  height: 40%;
+}
+
+.recommended .recommendedWrapper .carPreview div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recommended .recommendedWrapper .carPreview .yearAndMiles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommended .recommendedWrapper .carPreview .locationAndHeart {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.recommended .recommendedWrapper .carPreview .locationAndHeart p {
+  margin: 0;
+}
+
+.recommended .recommendedWrapper .carPreview .locationAndHeart img {
+  width: 20px;
+  height: 20px;
+}
+
+/*footer*/
+.footer {
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.footer .footerTop {
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+
+.footer .footerTop h2 {
+  margin: 0;
+}
+
+.footer .footerMiddle {
+  width: 100%;
+  height: 55%;
+  background-color: #2e2d37;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer .footerMiddle h2 {
+  margin: 0;
+}
+
+.footer .footerBottom {
+  width: 100%;
+  height: 25%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+
+@media (max-width: 450px) {
+  .header {
+    display: none;
+  }
+
+  /*Header mobile*/
+  .header2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  /*Menu*/
+  .menu {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .menu.display {
+    display: flex;
+  }
+
+  body.no-scroll {
+    overflow: hidden;
+  }
+
+  .menu .menuFrstChild {
+    width: 15%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.53);
+  }
+
+  .menu .menuScndChild {
+    width: 85%;
+    height: 100%;
+    background-color: white;
+  }
+
+  .menu .menuScndChild .closeBtnContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+  }
+
+  .menu .menuScndChild .userPicture {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu .menuScndChild .userPicture div {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+    border: 5px solid rgb(215, 214, 214);
+  }
+
+  .menu .menuScndChild .navigation {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu .menuScndChild .nameAndEmail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .menu .menuScndChild .nameAndEmail h2 {
+    margin: 5px;
+    line-height: 1;
+  }
+
+  .menu .menuScndChild .nameAndEmail h2:nth-child(2) {
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 20px;
+  }
+
+  .menu .menuScndChild .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(229, 227, 227);
+    margin-bottom: 20px;
+  }
+
+  .menu .menuScndChild .navigation div {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu .menuScndChild .navigation div img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 20px;
+  }
+
+  .menu .menuScndChild .navigation div h2 {
+    margin: 5px 0 5px 0;
+  }
+
+  .menu .menuScndChild .navigation div:nth-child(1) h2 {
+    color: #ff0000;
+  }
+
+  .menu .menuScndChild .navigation .signUpContainer.hidden {
+    display: none;
+  }
+
+  .menu .menuScndChild .navigation .logInContainer.hidden {
+    display: none;
+  }
+
+  .menu .menuScndChild .navigation .logOutContainer.hidden {
+    display: none;
+  }
+
+  /*Top slider*/
+  .topSlider {
+    height: 200px;
+  }
+
+  /*Search*/
+  .search {
+    margin-top: 20px;
+  }
+
+  .search .searchBlock {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .search .searchBlock .searchBlockHeader {
+    height: auto;
+    gap: 50px;
+  }
+
+  .search .searchBlock .searchBlockHeader h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .search .searchBlock .searchField {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .search .searchBlock .searchField div:nth-child(1) {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .search .searchBlock .searchField div:nth-child(1) img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .search .searchBlock .searchField div:nth-child(1) input {
+    width: 80%;
+    height: 30px;
+  }
+
+  .search .searchBlock .searchField div:nth-child(1) .searchBtn {
+    height: 35px;
+  }
+
+  .search .searchBlock .searchField div:nth-child(2) {
+    width: 100%;
+    height: 36px;
+    margin-top: 10px;
+  }
+
+  /*Makes*/
+  .makes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .makes .logosWrapper {
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* grid-template-rows: repeat(3, auto); */
+    justify-content: center;
+  }
+
+  .makes .logosWrapper div {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+  }
+
+  .makes .logosWrapper div:nth-child(1) img {
+    width: 50px;
+  }
+
+  .makes .logosWrapper div:nth-child(2) img {
+    width: 50px;
+  }
+
+  .makes .logosWrapper div:nth-child(3) img {
+    width: 40px;
+  }
+
+  .makes .logosWrapper div:nth-child(4) img {
+    width: 60px;
+  }
+
+  .makes .logosWrapper div:nth-child(5) img {
+    width: 56px;
+  }
+
+  .makes .logosWrapper div:nth-child(6) img {
+    width: 37px;
+  }
+
+  /*Recommended cars */
+
+  .recommended .recommendedWrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .recommended .recommendedWrapper .carPreview {
+    width: auto;
+    height: 440px;
+  }
+  .recommended .recommendedWrapper .carPreview .name {
+    margin: 10px 0 10px 15px;
+  }
+
+  /*footer*/
+  .footer {
+    height: 200px;
+  }
+
+  .footer .footerTop h2 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+
+  .footer .footerMiddle h2 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+
+  .footer .footerBottom h2 {
+    font-size: 1.1rem;
+  }
+}

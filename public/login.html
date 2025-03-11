@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"><h1>Webcars</h1></div>
+
+      <div class="navigation">
+        <h2 data-url="carsPage.html">Buy</h2>
+        <h2 data-url="sellCar.html">Sell</h2>
+        <h2 data-url="carsPage.html">About</h2>
+        <h2 data-url="carsPage.html">Help</h2>
+      </div>
+
+      <div class="notLogged">
+        <h2>Log in</h2>
+        <div class="LogInAndSignUpPopup"></div>
+
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAd1JREFUaEPtmQtOwzAQRN2TUU4GnAw4GTAollxn1/vxmCgokSrR4s+82UmyTW/l5Mft5PrLBXB0Ba8KnLECr5vop1LK/ef1sb3/3P6u7zU2zMELB9Zoj7dmPZc3kQhB+Itr1VKeBSGR+QCpRg239ADArXen8HYYKlEdjYhv15CMeJBiAWQ3TvCqU4bVGAGMnMeiONq8I1412xZAdL5aiRHAl6DCk03ETQOx5mOeZoSoVQOQomNt3vL+2XwNoHcfUUEZI0frZgS+7iGZsNMrAUjZt072CFhkbG/kzghJWJ/hjPsRkaOxfRVSAOa1mKVWWKcH2JkpVaAv25EAZpz/JUB/DmSuIKxU9RVwRcg8cVjqHOuYFxQpQq7rr2NzxhDzfPTeyI6IkdSSuG5kcG62FZh1373/imZuhXisGWrmMEFrp1fGSfv+kWqntSjh8xUQmvj0F5pRV8iGSIlXc+XoSeoQRiXS4iMAq+I0JT4KwIaYFp8BYEFQxGcBZiFo4mcAshBU8bMAUQi6eAaAF2KJeBaABYH/Sw+FGfcQ6k9MkeeoFPHMClhtR3tzp4lfATCKE7t/+jVl1RM39xcSoe8KfbQKoK8ENTYt4UqAkJPZwRdA1jnWvKsCLCez65y+At8NZYYxvongZAAAAABJRU5ErkJggg=="
+        />
+      </div>
+
+      <div class="logged">
+        <!-- <h2>User name</h2> -->
+
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAd1JREFUaEPtmQtOwzAQRN2TUU4GnAw4GTAollxn1/vxmCgokSrR4s+82UmyTW/l5Mft5PrLBXB0Ba8KnLECr5vop1LK/ef1sb3/3P6u7zU2zMELB9Zoj7dmPZc3kQhB+Itr1VKeBSGR+QCpRg239ADArXen8HYYKlEdjYhv15CMeJBiAWQ3TvCqU4bVGAGMnMeiONq8I1412xZAdL5aiRHAl6DCk03ETQOx5mOeZoSoVQOQomNt3vL+2XwNoHcfUUEZI0frZgS+7iGZsNMrAUjZt072CFhkbG/kzghJWJ/hjPsRkaOxfRVSAOa1mKVWWKcH2JkpVaAv25EAZpz/JUB/DmSuIKxU9RVwRcg8cVjqHOuYFxQpQq7rr2NzxhDzfPTeyI6IkdSSuG5kcG62FZh1373/imZuhXisGWrmMEFrp1fGSfv+kWqntSjh8xUQmvj0F5pRV8iGSIlXc+XoSeoQRiXS4iMAq+I0JT4KwIaYFp8BYEFQxGcBZiFo4mcAshBU8bMAUQi6eAaAF2KJeBaABYH/Sw+FGfcQ6k9MkeeoFPHMClhtR3tzp4lfATCKE7t/+jVl1RM39xcSoe8KfbQKoK8ENTYt4UqAkJPZwRdA1jnWvKsCLCez65y+At8NZYYxvongZAAAAABJRU5ErkJggg=="
+        />
+      </div>
+    </div>
+
+    <div class="header2">
+      <h1 data-url="index.html">Webcars</h1>
+      <img
+        class="menuBtn"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAK1JREFUaEPtlkEKwCAQxPT/j64/kIEwLNL07Ky7iWL3evzbj/e/HGDaoAY0AAl4hCBAHNcARggL/MLAByHR+BVyYsABoAINQIDdeHIHuh3A6g4AAeK4BjBCWCAx4EPWhKwBSDeJ41+JZJOxNckRGmsu2dgBEkrNNRpo0k1qJwZ8iROSlzX4HdDAtAG4fzeeXOJuB7C6A0CAOK4BjBAW0AAEiOMawAhhAQ1AgDh+AJfZDDGRtEaJAAAAAElFTkSuQmCC"
+      />
+    </div>
+
+    <div class="menu">
+      <div class="menuFrstChild"></div>
+
+      <div class="menuScndChild">
+        <div class="closeBtnContainer">
+          <img
+            class="closeMenuBtn"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAS1JREFUaEPtWFsOwkAInN5MT6Y306MZEvenbtuBgWgN/RXYeQBuu+Dkz3Jy/GgC33awHWgHRAW6hUQB5fR2QJZQLNAOiALK6YoDdwA3AFcAzyASuUaUwDh44I6QyKgRusxdADwmintIrMGPcm5B3Qnvk7YAMCSU3A/dogSsUARIJGd3vBQCXhLp4A2ASoAlUQI+i8ARCRt6W7frh5mXw+2c4cA4ZEvlGYgU8JkOeEikga8gsNdO9lsq+CYwaW5mDlJd6CEmrhY/v0aZPykm5nDnzwLUFvIA88TSZBQCEUCRnJLLnAJEyU25Tv/lC01kt3/tlXJ974mAT6uhDLGBsHaKfpEYJKQaKgF63VUFNoEqZdm67QCrVFVcO1ClLFu3HWCVqoprB6qUZeue3oEXr3xKMb7bQoAAAAAASUVORK5CYII="
+          />
+        </div>
+
+        <div class="userPicture"><div></div></div>
+
+        <div class="nameAndEmail">
+          <!-- <h2>Username</h2>
+          <h2>user@gmail.com</h2> -->
+        </div>
+
+        <div class="line"></div>
+
+        <div class="navigation">
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAYZJREFUaEPtmVtywyAMRcXOmpWlWVmzM6dKw4yDAekiEcYd8eMPHrpHDxtMopO3dHL9FACrIzgtAhvRNxFdX4CXRHSfATsFoBCfdd9+jTGUa3MHaIifBuEKIIifAuEGoBTvDuEC0BF/eynOxbzPf5eaMAP0xOei1YwZrWwTACIMGYvADAOMCBqZI8EMAViEWObWYGAADwEea2QYCMDTsNdaagAvg/s08FhTBeBhqFWM1rVFAKsB6S3C/RYbXQDLwhrhHunUBPik+AwyYrMK0NuYJZp7DN2eGVVt1b3TAWAj+iKin1YKLARgSQeIGkDLA0+mxQD3RHTZO/dfAnAK8f6dn4e2MAL8U4BT6O3ngOY78JZSnwaQ7AUA+sGSxpev0YgA6hHJw1I/ai9qQPIo2h8RKD2GegT1uNVe1IDV4xEByYNRA5KHin7UYXARg3rMwz32QvvLOrMgcIHDCaycL0aAJ3QO2qAeeLh4u6kF6J7SYFnyBPXtjQpAtrduRACs8/2f5dNH4AHc77IxHz8WIwAAAABJRU5ErkJggg=="
+            />
+            <h2 data-url="index.html">Home</h2>
+          </div>
+
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAeJJREFUaEPtmAFOBCEMRWdP5noy9WSrJ1N/Qg2SFgr9LEwyk5hdE9Lt6/+lMLfj5M/t5PkfF8BqBUcVuB/Hgb+XBIDveD7T51f6Lv9P4+wFQKJvKXlvUh+/C9+9i3vXeQFGEs9zmQbhAUDyj97KGOtfM5tRQrYAasnD3+J18b9YBb0hfVEmSoVoAXwrZULisESrQWu2o0HUAFBNNGzUy1ocwAMi/FgArOQlQS0eRQULoLQOo2LYCPK+YMRUjxJa4zKqNSWupkApN6VSyUulCuH5oAHQfyTrVHpxng1Q2iisrgZQNnBrVvRshVofhOJ7ABgNnENSC+SxEBNAmwd0BU7fxPSdIvMPvTiafFMGTprC5bE8bE/LfzPGfhkTwoT8XwugqRCZmuzD4Z8raxXQKjYCMS35loTWbYxxoQlbRyRoBfJcKRELVZajsrxusa6UchWlvKloASA55qUeyedgI5b8d3TxANRuVd5zkNgO67U3HMMgPQBilfKeXIPQ+kXbHBBjCKIXQJKNvFqsWbIbYhTAax1rnaVCtxKrAFobg1uJVQCefnJBrASgQKwGCEPsABCC2AWgBWH2w04AFkS1mXcDKCGaO9GOAAKRf5qDc1cA96S/ANylmrTwUmBSYd1hT6/ADzRzfzGoUVXkAAAAAElFTkSuQmCC"
+            />
+            <h2 data-url="carsPage.html">Search Car</h2>
+          </div>
+
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAc1JREFUaEPtWFtuwyAQJCdre7K2J2t7srYjgYRWu7Avgi3hr8TBMI+FHedRbn49bo6/HAK7HVzpwC8ht2StJZNW4IeApjyPA0Slj/r9pZTySn77rt8//39rnzUiD8dkOQDg70Y0IBEmEyXgAU55gkRzzqhBCTWyDPANsJuE14EReIDBRUvqrd6jeyNEwkMAAL4Yr6mKoz4gzWHGY36ggqcqQl16sswaGUfCXEoZBDjwMGhGAGNoKUIEzKe+PAQosAgBLVGRUAYBaQ6NA2qlpYEeAtjA/R6Q6vayBLgj1LOJw+pjAo8DXN3inuUYTQEfITBqZC3j0F7hFWtZmLNGiUumUamjakrkEmm0AbW60RM0d9/+4ey6hCMtxEmhjXPHTSKbQA+O69ggtz2Naup7FhG2ptEMAphjWxrNIrAtjWYSmJXadC3PJtaGNM04roxMmEyDqxz0zI+kUUrgKS80WWmUU/8pBDLSqNS5pbe71Dcy7vToF5DSqPR3S3vW1Y09eyAj/1BFXeAj7wMNQCSNhpRvD0cc6FX0pFG36qvTKFyR/l7/6Y7iaZPSDMhygFtL08g0GIdjDoGBPMcBTX2tLCHN+uExh0BYwuAEt3fgDwRMbTEomSndAAAAAElFTkSuQmCC"
+            />
+            <h2 data-url="sellCar.html">Sell your car</h2>
+          </div>
+
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAd1JREFUaEPtmQtOwzAQRN2TUU4GnAw4GTAollxn1/vxmCgokSrR4s+82UmyTW/l5Mft5PrLBXB0Ba8KnLECr5vop1LK/ef1sb3/3P6u7zU2zMELB9Zoj7dmPZc3kQhB+Itr1VKeBSGR+QCpRg239ADArXen8HYYKlEdjYhv15CMeJBiAWQ3TvCqU4bVGAGMnMeiONq8I1412xZAdL5aiRHAl6DCk03ETQOx5mOeZoSoVQOQomNt3vL+2XwNoHcfUUEZI0frZgS+7iGZsNMrAUjZt072CFhkbG/kzghJWJ/hjPsRkaOxfRVSAOa1mKVWWKcH2JkpVaAv25EAZpz/JUB/DmSuIKxU9RVwRcg8cVjqHOuYFxQpQq7rr2NzxhDzfPTeyI6IkdSSuG5kcG62FZh1373/imZuhXisGWrmMEFrp1fGSfv+kWqntSjh8xUQmvj0F5pRV8iGSIlXc+XoSeoQRiXS4iMAq+I0JT4KwIaYFp8BYEFQxGcBZiFo4mcAshBU8bMAUQi6eAaAF2KJeBaABYH/Sw+FGfcQ6k9MkeeoFPHMClhtR3tzp4lfATCKE7t/+jVl1RM39xcSoe8KfbQKoK8ENTYt4UqAkJPZwRdA1jnWvKsCLCez65y+At8NZYYxvongZAAAAABJRU5ErkJggg=="
+            />
+            <h2 data-url="favorites.html">Favorites</h2>
+          </div>
+
+          <div class="signUpContainer">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAURJREFUaEPtmWEOgjAMhcvN9GTqyfRmmiZgYFvt3F5hJeWXCVD79b1CxyZyfkzO86cAOFrBUOCMCtyJ6AYEe82xHkS0/P6GR1roQkRPYOKlUFm+SABOniEsD1aBFTZRYA8ATnxTdKQC76T0qNg/46L+hHMPAKF5QoHap0pYaHQL8fN78wyvlHaYHuBEeBS4Via+XLYbgJbXOhGGyOaaoy30DwBfm40F3gBqIYa00LrYWl90A6QBNKu0npf6wg2AZKkAcG+hVk+n90mFMG9iS4Cad0F3D1gB1CSvLpSQKzINdPhRQlsPDD/MaQDux2nNYtL53ZpYUyAA5grEh60mr7b6R/tghnwPnK4HOoou3prNTUgF0BsbJQpTgNLcglYhW7UhFeBkeYNj2V5CbnaIgx8aAF1xNV4AqCUyviAUMC6wGt69Ah/rHlkxYvYJaQAAAABJRU5ErkJggg=="
+            />
+            <h2 data-url="signup.html">Sign up</h2>
+          </div>
+
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAS5JREFUaEPtWdEOwjAIZH+mX6Z+mf6ZhsSataPtGq+4M+zJxI1xHNBjLEJ+LeT+SwD4NYPBwD8ycBWRCxDY423rJiLp98c8MoVOInIHOm6Z2viLBKDOK4iZl7KgDE9hwAOAOp4FHcnAswg9ynbTLuol6nsAqBRPMLC3q0QKeaaQ9uKsHzMVcer3ZQc7fAqVUgHZglt1BulClkCjAVBTlxQAWvrm0AA8pHHK+14ghmsAPZD0DsIAYEWIOoXWgGiLeA2Cuo0mINQHWQJBLSWsuqATc2Vd0Mrp2sF0eDndO1EDgOdIab0rGAgGelXa+b9MoS/NmY/rfuA86+u0xxwxFYD1gRfNgkY/29L0pqFRB1QvpfUSctmxWWzsnUdHAbjfj2YgAIxGIBgYjRj6fnoGXo2WSzEOlmDfAAAAAElFTkSuQmCC"
+            />
+            <h2 data-url="login.html">Log in</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="belowHeader"></div>
+
+    <div class="login">
+      <div class="loginBlock">
+        <h1>Log In</h1>
+
+        <input type="email" class="email" placeholder="Email" required />
+        <input type="text" class="password" placeholder="Password" required />
+
+        <div class="loginBtn"><h4>Log In</h4></div>
+        <p class="haveAnAcc logInBtn">
+          Don't have an account? <span>Sign up</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <h2>Webcars</h2>
+        <h2>BUY</h2>
+        <h2>SELL</h2>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
